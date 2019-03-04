@@ -61,6 +61,7 @@ class RegisterAcitivity : AppCompatActivity(), RegisterView {
         etOrganization.gone()
         etConfirmPasswordLayout.gone()
         btnRegister.text = resources.getString(R.string.login)
+        setTitle(getStringResources(R.string.login))
         btnRegister.setOnClickListener {
             if (etEmail.text.isNullOrEmpty()) {
                 etEmail.requestError(getStringResources(R.string.email_checker))

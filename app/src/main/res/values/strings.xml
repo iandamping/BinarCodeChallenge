@@ -2,6 +2,7 @@
     <string name="app_name">BinarChallengeCode</string>
     <string name="welcoming_app_name">Welcome to Binar App</string>
     <string name="login">Login</string>
+    <string name="home">Home</string>
     <string name="logout">Logout</string>
     <string name="full_name">Full Name</string>
     <string name="email_address">Email Address</string>

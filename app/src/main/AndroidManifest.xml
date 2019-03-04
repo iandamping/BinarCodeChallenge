@@ -10,8 +10,10 @@
             android:roundIcon="@mipmap/ic_launcher_round"
             android:supportsRtl="true"
             android:theme="@style/AppTheme">
-        <activity android:name="com.example.junemon.binarchallengecode.ui.activity.register.RegisterAcitivity"/>
-        <activity android:name="com.example.junemon.binarchallengecode.ui.activity.home.HomeActivity"/>
+        <activity android:name="com.example.junemon.binarchallengecode.ui.activity.register.RegisterAcitivity"
+                  android:label="@string/register"/>
+        <activity android:name="com.example.junemon.binarchallengecode.ui.activity.home.HomeActivity"
+                  android:label="@string/home"/>
         <activity android:name="com.example.junemon.binarchallengecode.ui.activity.splash.SplashActivity"
                   android:theme="@style/FullScreen">
             <intent-filter>
