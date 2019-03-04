@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">BinarChallengeCode</string>
+    <string name="welcoming_app_name">Welcome to Binar App</string>
+    <string name="login">Login</string>
+    <string name="logout">Logout</string>
+    <string name="full_name">Full Name</string>
+    <string name="email_address">Email Address</string>
+    <string name="university_organization">University / Organization</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="password">Password</string>
+    <string name="register">Register</string>
+    <string name="email_checker">Email cannot be empty</string>
+    <string name="name_checker">Nama cannot be empty</string>
+    <string name="organisasi_checker">Organisasi cannot be empty</string>
+    <string name="password_checker">Password cannot be empty</string>
+    <string name="password_not_same">Password not same</string>
+    <string name="please_register">Please Register First</string>
+    <string name="password_wrong">Password or Username is not valid</string>
+    <string name="logout_user">Are you sure want to Logout ?</string>
+</resources>
