@@ -1,5 +1,8 @@
 package com.example.junemon.binarchallengecode.utils
 
+/**
+ * Created by ian on 04/March/19.
+ */
 object Constant {
     val sharedPrefName = "jun"
     val saveUserkey = "juns"

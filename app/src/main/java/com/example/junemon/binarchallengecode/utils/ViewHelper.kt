@@ -4,6 +4,9 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 
+/**
+ * Created by ian on 04/March/19.
+ */
 fun View.visible() {
     this.visibility = View.VISIBLE
 }

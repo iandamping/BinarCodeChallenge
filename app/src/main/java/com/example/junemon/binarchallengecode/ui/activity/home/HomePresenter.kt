@@ -7,6 +7,9 @@ import com.example.junemon.binarchallengecode.ui.activity.splash.SplashActivity
 import com.example.junemon.binarchallengecode.utils.getStringResources
 import com.example.junemon.binarchallengecode.utils.startActivityWithFinish
 
+/**
+ * Created by ian on 04/March/19.
+ */
 class HomePresenter(var mView: HomeView, var act: FragmentActivity) {
     private var allData: MutableList<AndroidType> = mutableListOf()
 

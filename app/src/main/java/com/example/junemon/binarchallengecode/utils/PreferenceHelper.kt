@@ -4,6 +4,9 @@ import android.app.Application
 import android.content.Context
 import com.example.junemon.binarchallengecode.utils.Constant.sharedPrefName
 
+/**
+ * Created by ian on 04/March/19.
+ */
 class PreferenceHelper(app: Application) {
     private val prefHelp by lazy {
         app.getSharedPreferences(sharedPrefName, Context.MODE_PRIVATE)
@@ -18,7 +21,7 @@ class PreferenceHelper(app: Application) {
         return prefHelp.getString(key, "")
     }
 
-    fun deleteSharedPreference(){
+    fun deleteSharedPreference() {
         prefHelperEditor.clear().apply()
     }
 

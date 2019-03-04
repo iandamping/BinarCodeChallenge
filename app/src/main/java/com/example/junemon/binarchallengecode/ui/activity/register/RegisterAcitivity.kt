@@ -5,9 +5,13 @@ import android.view.MenuItem
 import androidx.appcompat.app.AppCompatActivity
 import com.example.junemon.binarchallengecode.R
 import com.example.junemon.binarchallengecode.model.User
+import com.example.junemon.binarchallengecode.ui.activity.splash.SplashActivity
 import com.example.junemon.binarchallengecode.utils.*
 import kotlinx.android.synthetic.main.activity_register.*
 
+/**
+ * Created by ian on 04/March/19.
+ */
 class RegisterAcitivity : AppCompatActivity(), RegisterView {
     private lateinit var user: User
     private lateinit var presenter: RegisterPresenter
@@ -89,7 +93,7 @@ class RegisterAcitivity : AppCompatActivity(), RegisterView {
     override fun onOptionsItemSelected(item: MenuItem?): Boolean {
         when (item?.itemId) {
             android.R.id.home -> {
-                finish()
+                startActivity<SplashActivity>()
             }
         }
         return super.onOptionsItemSelected(item)

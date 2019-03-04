@@ -1,6 +1,7 @@
 package com.example.junemon.binarchallengecode.ui.activity.home
 
 import android.os.Bundle
+import android.os.Handler
 import android.view.Menu
 import android.view.MenuItem
 import androidx.appcompat.app.AppCompatActivity
@@ -9,10 +10,16 @@ import com.example.junemon.binarchallengecode.R
 import com.example.junemon.binarchallengecode.model.AndroidType
 import com.example.junemon.binarchallengecode.ui.adapter.HomeAdapter
 import com.example.junemon.binarchallengecode.utils.alertHelper
+import com.example.junemon.binarchallengecode.utils.getStringResources
+import com.example.junemon.binarchallengecode.utils.myToast
 import kotlinx.android.synthetic.main.activity_home.*
 
+/**
+ * Created by ian on 04/March/19.
+ */
 class HomeActivity : AppCompatActivity(), HomeView {
-    lateinit var presenter: HomePresenter
+    private lateinit var presenter: HomePresenter
+    private var doubleBackPressed: Boolean = false
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_home)
@@ -46,5 +53,15 @@ class HomeActivity : AppCompatActivity(), HomeView {
             }
             else -> super.onOptionsItemSelected(item)
         }
+    }
+
+    override fun onBackPressed() {
+        if (doubleBackPressed) {
+            super.onBackPressed()
+            return
+        }
+        this.doubleBackPressed = true
+        myToast(getStringResources(R.string.user_out))
+        Handler().postDelayed(Runnable { doubleBackPressed = false }, 2000)
     }
 }

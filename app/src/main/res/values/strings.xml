@@ -17,4 +17,5 @@
     <string name="please_register">Please Register First</string>
     <string name="password_wrong">Password or Username is not valid</string>
     <string name="logout_user">Are you sure want to Logout ?</string>
+    <string name="user_out">Please click BACK again to exit</string>
 </resources>

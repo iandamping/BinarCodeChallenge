@@ -9,6 +9,9 @@ import com.example.junemon.binarchallengecode.utils.inflates
 import kotlinx.android.extensions.LayoutContainer
 import kotlinx.android.synthetic.main.item_home.*
 
+/**
+ * Created by ian on 04/March/19.
+ */
 class HomeAdapter(var allData: List<AndroidType>, var listener: (AndroidType) -> Unit) :
     RecyclerView.Adapter<HomeAdapter.HomeViewHolder>() {
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): HomeViewHolder {

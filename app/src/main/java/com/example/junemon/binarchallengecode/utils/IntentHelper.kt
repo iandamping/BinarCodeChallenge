@@ -9,6 +9,9 @@ import org.jetbrains.anko.alert
 import org.jetbrains.anko.noButton
 import org.jetbrains.anko.yesButton
 
+/**
+ * Created by ian on 04/March/19.
+ */
 inline fun <reified T : Activity> FragmentActivity.startActivity() {
     startActivity(Intent(this, T::class.java))
     this.overridePendingTransition(R.anim.fade_in_activity, R.anim.fade_out_activity)
@@ -18,6 +21,7 @@ inline fun <reified T : Activity> FragmentActivity.startActivity() {
 inline fun <reified T : Activity> FragmentActivity.startActivityWithValue(key: String, value: String) {
     startActivity(Intent(this, T::class.java).putExtra(key, value))
     this.overridePendingTransition(R.anim.fade_in_activity, R.anim.fade_out_activity)
+    this.finish()
 }
 
 inline fun <reified T : Activity> FragmentActivity.startActivityWithFinish(tittle: String) {
